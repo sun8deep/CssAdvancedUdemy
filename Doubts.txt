@@ -93,3 +93,57 @@ but rely on order when using 3rd party stye sheets-- always put your Author styl
 
 ________________________________________________________________________________
 
+Each property has an initial value, used if nothing is declared
+Browser specify a root font-size for each page (usually 16px)
+
+Percentages are relative values are always converted to pixels
+Percentages are measured relative to their parent's font-size. if used to specify font-size;
+Percentages are measured relative to their parents width, if used to specify lengths.
+
+Em are measured relative their parent font-size, if used to specify font-size
+em are measured relative to their current font-size if used to specify length
+
+rem are always measured relative to the document's root font-size
+VH VW are simpley percentages measurements to the viewports height and width.
+_____________________________________________________________________________
+
+Inheritance: 
+Properties related to text are inherited Font-size, font-family, color, etcl.
+Computed value of a property is what gets inherited not declared value
+inerit key word will force to inherit for few properties
+
+_____________________________________________________________________________
+
+
+Visual formating Model:
+
+Dimension of Boxes: the box model 
+Box type : inline, block, inline-block
+Positioning scheme : floats and positioning
+Stacking contexts
+other elementsViewPort size, dimension of images etc;
+
+Box Types:
+InlineBlock-level
+Inline-Block
+_____________________________________________________________________________
+
+what is Sass ?
+
+Sass is a CSS preprocessor, an extension of css that adds power and elegance to the basic language
+
+
+Variable: for reusable such as colors, font-sizes, spacing
+Nesting
+Operators
+partial and imports
+Mixins
+functions
+Extends
+Control directives
+
+_____________________________________________________________________________
+
+Sass syntax Scss syntax
+_____________________________________________________________________________
+
