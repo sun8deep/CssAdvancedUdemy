@@ -1,0 +1,95 @@
+box-sizing
+display Block
+animation timing functions
+
+_____________________________________________________________________________
+
+
+Three pillars to write good HTMl and CSS to build a good website:
+Responsive Design :
+
+Fluid layouts
+Media Queries
+Resposnsive Images
+Correct Units
+Desktop-first vs mobile-first
+
+
+Maintainable and Scalable Code:
+
+clean
+Easy to understand
+Growth
+Reusable
+How to organize files
+How to name classes
+How to structure HTML
+
+Web Performance:
+Less HTTP request
+Less code
+Compress code
+Use a CSS preprocessor
+Less Images
+Compress Images
+
+________________________________________________________________________________
+
+Load a web Page:
+
+Load HTMl -> Parse HTMl ---> DOM -- (1)
+ Parse HTMl --> Load CSS -- > Parse CSS --> Resolve Conflicting CSS declarations (casacade) -- i
+                                        --> Process final CSS -- ii
+
+                                        above two results i +ii --> CSS object Model -- (2)
+
+                                        render tree 1 +2 => website rendering : the visual formating model => Final rendered website
+
+________________________________________________________________________________
+How is CSS parsed ?
+
+.my-class {
+    color: blue;
+    text-align: centre;  <-- declaration
+}
+
+Casace: Process of combining different stylesheets and resolving conficts between different CSS rules and declarations,
+ when more than one rule applies to a certain element.
+
+ Author
+ User
+ Browsr (user agent)
+
+ Imprtance > Specificity > Source Order
+
+ Imporatnce :
+
+ User !importance declarations
+ Author
+ Author declarationsUser declarations
+ Default browser declarations
+
+ Specificity
+ Inline stylesheets
+ IDs
+ Classes, pseudo-classes, attribute
+ Elements,pseudo-Elements
+
+ Source Order: 
+
+ The last declaration in the code will be consider as priority.
+
+
+ ________________________________________________________________________________
+Correct specificities -- more maintainable code.
+Inline styles will always have priority over style sin external stylesheets.
+
+A selector that contains 1 ID is more secific than one with 1000 classes.
+A selector that contains 1 class has more specific than one with 1000 elements.
+
+Rely more on specificity than on the order of selectors;
+
+but rely on order when using 3rd party stye sheets-- always put your Author style sheet last.
+
+________________________________________________________________________________
+
